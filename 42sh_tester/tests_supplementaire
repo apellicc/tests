@@ -1,0 +1,174 @@
+gne vide
+;
+|
+>
+<
+>>
+<<
+ | < ; > | (des trucs comme ca)
+toto
+ls
+ls ; toto
+toto ; ls
+ls ;
+; ls
+;;
+ls ;;
+ls ; exit
+ls ; exit ;
+ls ; truc ;
+truc | ls
+ls | truc
+cat | ls
+cat | wc
+cat | cat -e
+ls > truc
+truc > ls
+ls < truc
+cat < auteur < pouet
+truc < toto
+truc < auteur
+ls > truc -l
+cat<auteur -n
+ls > truc -l ; cat truc 
+ls -z > truc ; cat -e truc
+ls -z 2>&-
+ls -z 2<&-
+ls <&-
+ls >&-
+{
+}
+}{
+{}
+pareil avec parentheses, accolades, etc
+
+ls > truc < toto
+ls < toto > truc
+ls < toto 2> truc
+cat < auteur > truc
+ls | cat -e
+cat << toto
+cat -e << toto
+cat  << toto -e
+cat << toto -e | cat -n
+cat -e 2<< toto
+cat fichierquiexistepas 2>&-
+cat -z 2>&-
+ls -z 2> truc
+toto 2> truc
+toto > truc
+ls truc | cat -e 2>&1
+ls truc 2&>1 | cat -e
+ls truc 2&>0 | cat -e
+ls truc 2>&1 | cat -e 2> pouet
+ls truc 2>&1 | cat -e 1>&2 2> pouet
+ls | cat -e > toto
+ls | cat -e | cat -n
+ls | wc | cat -e
+ls | truc | cat -e
+ls | cat << toto
+ls | cat -0 | truc
+ls | truc | cat -0
+cat << toto | ls -lR / | cat -n
+cat << toto -e | cat >> truc -n
+cat << toto -z > tutu
+cat << toto -x 2> tutu
+cat -e << toto | truc 2>&1 | cat -e
+ls > >> truc
+ls >> > truc
+ls >> pouet > truc
+ls > truc >> pouet
+ls > >>
+> >> truc
+ls | setenv truc toto ; env
+ls | exit
+ls 2>
+ls 2>&
+ls -l 1<&2 | cat -e
+ls -l | cat -e < auteur
+ls -l | cat -e > lol < auteur
+cat 2<< truc
+ls | 2>&- cat < trucquiexistepas
+cat<au' te'ur -n|toto
+2<2<&-
+ls 2>>toto'truc'pouet -l
+
+
+
+TERMCAPS :
+
+echo -n truc puis du multi ligne
+plus de ligne que la taille de l’ecran
+
+- ligne simple
+- plusieurs lignes
+
+- ecrire au debut de la ligne (sur une ligne)
+- ecrire au debut de la ligne (sur plusieurs lignes)
+- ecrire au niveau du retour a la ligne
+- ecrire au milieu d'une ligne
+- supprimer des caracteres depuis la fin d'une ligne
+- suppr des caracteres au milieu d'une ligne
+- suppr des caracteres au debut de la ligne
+
+- se déplacer vers la gauche en bout de ligne
+- vers la droite en debut de ligne
+- dans les deux sens sur plusieurs lignes
+- supprimer des caracteres/en rajouter en debut/fin de ligne et essayer de se déplacer là ou ils étaient
+
+- copier depuis la fin dune ligne
+- copier depuis le debut d'une ligne
+- copier une ligne vide
+- copier depuis le milieu d'une ligne
+- copier plusieurs fois a la suite
+pareil avec couper
+- coller avec un presse papier vide
+- coller en debut de ligne
+- coller en fin de ligne
+- coller en milieu de ligne
+- coller dans une ligne vide
+
+Passer d'une ligne a l'autre:
+- Up sous le prompt
+- Up sous des caracteres vides 
+(Ex : tototototo"
+dquote> truc pouet toto) <- up en étant sur "toto"
+- Up sous une chaine de caractere normale
+- Down sur une ligne
+- Down sur du multi ligne
+- Down sur un prompt
+(EX : pouet[
+> truc "				<== essayer de descendre en étant sur "truc"
+dquote> hello"
+> 						<== essayer de remonter en étant sur cette ligne
+)
+- Up en ayant le curseur sous le tout premier caractère écrit
+- Up en étant en bout de ligne
+
+- se déplace de mot en mot vers la droite ou la gauche
+-> plusieurs lignes
+-> ligne vide
+-> une ligne
+-> multi ligne
+-> un seul mot
+-> mot séparés par un esapce
+-> mots séparés par plusieurs espaces
+-> avec des quotes
+-> mots de une seule lettre
+
+- aller au home depuis le premier caractere
+- aller au home depuis une ligne random
+- aller au home depuis la fin
+- pareil pour le end
+
+- Ctrl C sur une ligne vide
+- ^C au milieu d'une ligne
+- ^C au milieu d'une ligne sur plusieurs lignes
+- ^C depuis la fin d'une ligne
+- ^C dans un quote
+- ^C dans un programme
+- ^D a la fin d'une ligne
+- ^D au debut/ au milieu d'une ligne
+- ^D sur une ligne vide
+
+
